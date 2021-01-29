@@ -8,7 +8,7 @@ graafikusse.
 ## Kasutus: 
 Programmi käivitamisel on andmeallika valimiseks kolm varianti. Käivitades programm terminalist saab
 lisada andmeallika programmi nime järele:
-```Ilmajaam [Andmedfail].```
+```Ilmajaam [Andmedfail]```.
 Programmi siseselt andmeallika lisamiseks
 on vajalik sisse trukkida .txt kujul oleva andmeallika nimi. Jättes tekstivälja tühjaks ning
 vajutades sisestusklahvi valib programm vaikimisi andmeallikaks faili ARC-2021-01-24.txt.
