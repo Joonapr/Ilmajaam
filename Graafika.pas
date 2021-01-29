@@ -160,7 +160,7 @@ Begin
   o := 0;
   R := @andmed.data[o];
   CTT := DateTimeToTimeStamp(R^.date);
-  CTTS := CTT.Date*24*3600+round(CTT.Time/1000);
+  CTTS := CTT.Date*24*3600+longint(round(CTT.Time/1000));
 
   // timeframe in seconds 0..TF+1200
   i := 0;
@@ -215,7 +215,7 @@ Begin
             begin
           R := @andmed.data[o];
           CTT := DateTimeToTimeStamp(R^.date);
-          CTTS := CTT.Date*24*3600+round(CTT.Time/1000);
+          CTTS := CTT.Date*24*3600+longint(round(CTT.Time/1000));
             end
           else
           begin
