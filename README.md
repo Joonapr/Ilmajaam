@@ -7,12 +7,14 @@ graafikusse.
 
 ## Kasutus: 
 Programmi käivitamisel on andmeallika valimiseks kolm varianti. Käivitades programm terminalist saab
-lisada andmeallika programmi nime järele: Ilmajaam [Andmedfail]. Programmi siseselt andmeallika lisa-
-miseks on vajalik siise trukkida .txt kujul oleva andmeallika nimi. Jättes tekstivälja tühjaks ning
+lisada andmeallika programmi nime järele:
+```Ilmajaam [Andmedfail].```
+Programmi siseselt andmeallika lisamiseks
+on vajalik sisse trukkida .txt kujul oleva andmeallika nimi. Jättes tekstivälja tühjaks ning
 vajutades sisestusklahvi valib programm vaikimisi andmeallikaks faili ARC-2021-01-24.txt.
 
 ## Piirangud:
 Graafika käivitatamisel kasutatakse limiteeritud graafika vahendeid ja ei oma võimet keerulisemate
-funktsioonide kvamiseks (nt sündmused hiire liikumisel jms). Programm ei tööta MSys keskkonnas. Andme-
-failist loetakse andmeid nende järjekorra põhiselt ja sellepärast peab andmeallikas omama alati sama-
-sugust struktuuri.
+funktsioonide kvamiseks (nt sündmused hiire liikumisel jms). Programm ei tööta MSys keskkonnas.
+Andmefailist loetakse andmeid nende järjekorra põhiselt ja sellepärast peab andmeallikas omama
+alati samasugust struktuuri.
