@@ -8,6 +8,7 @@ Type
     datestr   : packed array [1..20] Of char;
     date      : TDateTime;
     temp      : Single;
+    wind      : Single;
   End;
   ajt = Record
     data: array Of kjt;
@@ -67,7 +68,11 @@ Var
   dt: TDateTime;
 Begin
   fs := DefaultFormatSettings;
-  fs.ShortDateFormat := 'yyyy-mm-dd';
+  fs.ShortDateFormat := 'YYYY-MM-DD';
+  fs.LongTimeFormat := 'YYYY-MM-DD hh:nn:ss';
+  fs.DateSeparator := '-';
+  fs.TimeSeparator := ':';
+  fs.DecimalSeparator := '.';
   WriteLn('Programm loeb andmekandjast kuup2eva, kellaaja ning');
   WriteLn('temepratuurin2itajad ja teeb andmetest graafiku.');
 
@@ -101,7 +106,7 @@ Begin
                 Begin
                   tmp := COPY(Rida,Offset,P-Offset);
                   val(tmp, B.temp, err);
-                  B.temp := StrToFloat(tmp);
+                  B.temp := StrToFloat(tmp, fs);
                 End;
             End;
           If j<=C.len Then
