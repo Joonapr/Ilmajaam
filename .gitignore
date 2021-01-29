@@ -1,0 +1,8 @@
+*.o
+*.err
+*.out
+*.ppu
+*.bak
+*.lpi
+*.lps
+lib
